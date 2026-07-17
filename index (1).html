@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEO — Lietuvos ekonomikos observatorija</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          blue: { primary: '#0A4B8C', accent: '#005A9C' },
+          slate: { ink: '#1C2530', mute: '#5B6472', line: '#E1E4E9', paper: '#F7F8FA' },
+        },
+        fontFamily: {
+          serif: ['Newsreader', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', 'monospace'],
+        },
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; color: #1C2530; }
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, #EEF1F5 1px, transparent 1px),
+      linear-gradient(to bottom, #EEF1F5 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .ticket-top-white {
+    background-image: radial-gradient(circle at 8px 0, transparent 7px, #FFFFFF 7px);
+    background-size: 24px 16px;
+    background-repeat: repeat-x;
+    background-position: top left;
+  }
+</style>
+</head>
+<body class="bg-white text-slate-ink antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-line">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="#" class="font-mono text-sm tracking-widest font-medium text-slate-ink">LEO<span class="text-blue-accent">.</span></a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-mute">
+      <a href="#tikslai" class="hover:text-blue-accent transition-colors">Tikslai</a>
+      <a href="#biuleteniai" class="hover:text-blue-accent transition-colors">Biuleteniai</a>
+      <a href="#prisijunk" class="hover:text-blue-accent transition-colors">Prisijunk</a>
+    </nav>
+    <a href="#prisijunk" class="text-sm font-semibold bg-slate-ink text-white px-4 py-2 hover:bg-blue-primary transition-colors">
+      Prisijunk prie LEO
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative grid-bg border-b border-slate-line">
+  <div class="max-w-6xl mx-auto px-6 pt-20 pb-16 md:pt-28 md:pb-20">
+    <p class="font-mono text-xs tracking-[0.2em] text-blue-accent mb-6">ĮKURTA 2026 — VILNIUS</p>
+    <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl leading-[1.08] max-w-3xl text-slate-ink">
+      Lietuvos ekonomika, paaiškinta žmonių kalba.
+    </h1>
+    <p class="mt-6 max-w-xl text-lg text-slate-mute leading-relaxed">
+      Paaiškiname, kokie įstatymai priimami Lietuvoje ir ką jie iš tikrųjų reiškia tau. Trumpai, aiškiai, be sudėtingo teisininkų žargono.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a href="#biuleteniai" class="bg-blue-primary text-white font-semibold px-6 py-3 hover:bg-blue-accent transition-colors">
+        Skaityti naujausią biuletenį
+      </a>
+      <a href="#prisijunk" class="border border-slate-ink text-slate-ink font-semibold px-6 py-3 hover:border-blue-accent hover:text-blue-accent transition-colors">
+        Prisijungti prie MUN
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TIKSLAI -->
+<section id="tikslai" class="bg-slate-paper border-b border-slate-line">
+  <div class="max-w-6xl mx-auto px-6 py-20">
+    <p class="font-mono text-xs tracking-[0.2em] text-blue-accent mb-3">MŪSŲ TIKSLAI</p>
+    <h2 class="font-serif text-3xl md:text-4xl max-w-xl mb-14">Ką mes iš tikrųjų darome.</h2>
+
+    <div class="grid md:grid-cols-2 gap-px bg-slate-line border border-slate-line">
+      <div class="bg-slate-paper p-8">
+        <p class="font-mono text-xs text-blue-accent mb-4">§1 — BIULETENIAI</p>
+        <h3 class="font-serif text-xl mb-3">Aiškiname įstatymus</h3>
+        <p class="text-slate-mute leading-relaxed text-sm">
+          Kai Seimas priima naują mokesčių ar darbo įstatymą, mes jį paverčiame trumpu, suprantamu tekstu. Žinosi, kas vyksta tavo šalyje — nereikės skaityti 40 puslapių teisės akto.
+        </p>
+      </div>
+      <div class="bg-slate-paper p-8">
+        <p class="font-mono text-xs text-blue-accent mb-4">§2 — MUN</p>
+        <h3 class="font-serif text-xl mb-3">Online MUN anglų kalba</h3>
+        <p class="text-slate-mute leading-relaxed text-sm">
+          Kartą per metus rengiame nemokamą MUN sesiją internetu. Tema — Lietuvos ekonomika ir jos problemos. Diskutuoji anglų kalba, mokaisi argumentuoti ir geriau supranti, kas vyksta Lietuvos politikoje.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIULETENIAI -->
+<section id="biuleteniai" class="bg-white border-b border-slate-line">
+  <div class="max-w-6xl mx-auto px-6 py-20">
+    <div class="flex items-end justify-between mb-14 flex-wrap gap-4">
+      <div>
+        <p class="font-mono text-xs tracking-[0.2em] text-blue-accent mb-3">GYVI BIULETENIAI</p>
+        <h2 class="font-serif text-3xl md:text-4xl">Apžvalga trimis punktais.</h2>
+      </div>
+      <a href="#" class="text-sm font-semibold text-blue-accent hover:text-blue-primary whitespace-nowrap">Peržiūrėti archyvą →</a>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+      <!-- Featured bulletin -->
+      <article class="lg:col-span-2 border border-slate-line ticket-top-white pt-5">
+        <div class="px-8 pb-8">
+          <div class="flex items-center justify-between mb-6 font-mono text-xs text-slate-mute">
+            <span class="text-blue-accent">NR.: LEO/GPM/2026-03</span>
+            <span>2026 07 16</span>
+          </div>
+          <span class="inline-block font-mono text-[11px] tracking-wide bg-blue-primary/10 text-blue-primary px-2 py-1 mb-4">MOKESČIAI · GPM</span>
+          <h3 class="font-serif text-2xl md:text-3xl mb-5 leading-tight">
+            Progresinis GPM: kas keičiasi jauniems dirbantiesiems
+          </h3>
+          <ul class="space-y-3 text-sm text-slate-ink mb-6">
+            <li class="flex gap-3"><span class="text-blue-accent font-mono">01</span><span>Jei uždirbi iki 3000 €/mėn., tavo mokesčio tarifas nesikeičia — liks 20%, kaip ir dabar.</span></li>
+            <li class="flex gap-3"><span class="text-blue-accent font-mono">02</span><span>32% tarifas pradės galioti nuo mažesnės sumos — vadinasi, daugiau jaunų ir gerai uždirbančių žmonių jį pasieks greičiau nei anksčiau.</span></li>
+            <li class="flex gap-3"><span class="text-blue-accent font-mono">03</span><span>SODRA įmokos nesikeičia — ši reforma liečia tik pajamų mokestį, ne tavo atlyginimo išskaitas.</span></li>
+          </ul>
+          <a href="#" class="text-sm font-semibold text-blue-accent hover:text-blue-primary">Skaityti visą analizę →</a>
+        </div>
+      </article>
+
+      <!-- Upcoming ghost cards -->
+      <div class="flex flex-col gap-8">
+        <article class="border border-dashed border-slate-line p-6 opacity-60">
+          <div class="flex items-center justify-between mb-4 font-mono text-xs text-slate-mute">
+            <span>NR.: LEO/LAB/2026-04</span>
+            <span>GREITAI</span>
+          </div>
+          <span class="inline-block font-mono text-[11px] bg-slate-line/60 text-slate-mute px-2 py-1 mb-3">DARBO RINKA</span>
+          <h4 class="font-serif text-lg text-slate-mute">Minimali alga 2027: kas keisis?</h4>
+        </article>
+        <article class="border border-dashed border-slate-line p-6 opacity-60">
+          <div class="flex items-center justify-between mb-4 font-mono text-xs text-slate-mute">
+            <span>NR.: LEO/FIS/2026-05</span>
+            <span>GREITAI</span>
+          </div>
+          <span class="inline-block font-mono text-[11px] bg-slate-line/60 text-slate-mute px-2 py-1 mb-3">VALSTYBĖS BIUDŽETAS</span>
+          <h4 class="font-serif text-lg text-slate-mute">2027 m. biudžetas: kiek atitenka jaunimui</h4>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRISIJUNK -->
+<section id="prisijunk" class="bg-slate-ink text-white">
+  <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16">
+    <div>
+      <p class="font-mono text-xs tracking-[0.2em] text-blue-accent mb-3">PRISIJUNK</p>
+      <h2 class="font-serif text-3xl md:text-4xl mb-6 leading-tight">Du būdai prisidėti.</h2>
+      <p class="text-white/60 leading-relaxed max-w-md">
+        Gali tiesiog sekti naujienas, o gali ir pats prisidėti prie diskusijų — rinkis, kas tau labiau tinka.
+      </p>
+      <div class="flex gap-6 mt-10 font-mono text-xs text-white/50">
+        <a href="#" class="hover:text-white transition-colors">INSTAGRAM</a>
+        <a href="#" class="hover:text-white transition-colors">LINKEDIN</a>
+        <a href="mailto:labas@leo.lt" class="hover:text-white transition-colors">EL. PAŠTAS</a>
+      </div>
+    </div>
+
+    <div class="space-y-6">
+      <div class="border border-white/15 p-6">
+        <h3 class="font-serif text-xl mb-2">Prenumeruoti biuletenius</h3>
+        <p class="text-sm text-white/50 mb-4">Trys punktai. Tavo pašto dėžutėje. Jokio šlamšto.</p>
+        <form class="flex flex-col sm:flex-row gap-3">
+          <input type="email" placeholder="tavo@pastas.lt" class="flex-1 bg-transparent border border-white/25 px-4 py-3 text-sm placeholder-white/40 focus:outline-none focus:border-blue-accent">
+          <button type="submit" class="bg-blue-accent text-white font-semibold px-6 py-3 text-sm hover:bg-blue-primary transition-colors whitespace-nowrap">Prenumeruoti</button>
+        </form>
+      </div>
+
+      <div class="border border-white/15 p-6">
+        <h3 class="font-serif text-xl mb-2">Registruotis į MUN</h3>
+        <p class="text-sm text-white/50 mb-4">LEO MUN — kasmetinė online sesija anglų kalba. Tema: Lietuvos ekonomika ir jos problemos.</p>
+        <a href="#" class="inline-block border border-white/25 px-6 py-3 text-sm font-semibold hover:border-blue-accent hover:text-blue-accent transition-colors">
+          Registruotis →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-ink border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 font-mono text-xs text-white/40">
+    <span>© 2026 LIETUVOS EKONOMIKOS OBSERVATORIJA (LEO)</span>
+    <span>VILNIUS, LT</span>
+  </div>
+</footer>
+
+</body>
+</html>
